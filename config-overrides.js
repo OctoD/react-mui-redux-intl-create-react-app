@@ -4,6 +4,7 @@ module.exports = function override(config) {
   config.resolve = {
     ...config.resolve,
     alias: {
+      'react': path.resolve('./node_modules/react'),
       "@": path.resolve(__dirname, "src"),
       "@actions": path.resolve(__dirname, "src/store/actions.ts"),
       "@components": path.resolve(__dirname, "src/components"),
